@@ -3,7 +3,7 @@
 @mixin buttons {
   border: none;
   border-radius: 3%;
-  background-color: c.$bg-color;
+  background-color: c.$bg-black;
   color: c.$main-white;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 @mixin section-generic-style {
-  background-color: c.$bg-color;
+  background-color: c.$bg-black;
   color: c.$main-white;
   border: thin solid c.$main-white;
   box-shadow: 5px 5px 6px #444;

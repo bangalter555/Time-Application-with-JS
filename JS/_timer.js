@@ -71,7 +71,7 @@ export const clickOnTimer = () => {
     let target = e.target;
     e.stopPropagation();
 
-    if (target.matches("#timer-btn")) {
+    if (target.matches("#timer-btn") || target.matches("#timer-btn img")) {
       for (let i = 0; i < $navBar.length; i++) {
         if (i === 2) {
           $navBar[i].disabled = true;

@@ -6,13 +6,13 @@
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 60%;
+  height: 85%;
   gap: 4%;
 }
 
 .set-alarm {
   width: 50%;
-  height: 25%;
+  height: 35%;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -39,9 +39,9 @@
   align-items: center;
 
   button {
-    width: 45%;
-    padding: 1.5rem auto;
-    border: none;
+    width: 49%;
+    height: 3rem;
+    border: thin solid c.$main-white;
     background-color: c.$dark-blue-btn;
     color: c.$main-white;
     cursor: pointer;
@@ -75,8 +75,7 @@
 
   button.delete-alarm {
     height: 100%;
-    padding: 1.5rem auto;
-    border: none;
+    border: solid thin c.$main-white;
     background-color: c.$dark-blue-btn;
     color: c.$main-white;
     cursor: pointer;

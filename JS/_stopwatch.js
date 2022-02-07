@@ -39,7 +39,7 @@ export const clickOnChrono = () => {
     e.stopPropagation();
     let target = e.target;
 
-    if (target.matches("#chrono-btn")) {
+    if (target.matches("#chrono-btn") || target.matches("#chrono-btn img")) {
       for (let i = 0; i < $navBar.length; i++) {
         if (i === 1) {
           $navBar[i].disabled = true;

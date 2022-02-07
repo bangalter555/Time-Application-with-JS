@@ -60,7 +60,7 @@ $d.addEventListener("submit", (e) => {
     }
   }
   //Creating a variable to display as a stored alarm
-  let alarmComparedToTime = `${new_h}:${new_m}:00 ${pmOrAm}`;
+  let alarmComparedToTime = `${new_h}:${new_m} ${pmOrAm}`;
   //Creating a variable to compare with current time
   let newAlarm = `${new_h}:${new_m}:00`;
 
@@ -97,7 +97,7 @@ export const clickOnAlarm = () => {
     let target = e.target;
     e.stopPropagation();
 
-    if (target.matches("#alarm-btn")) {
+    if (target.matches("#alarm-btn") || target.matches("#alarm-btn img")) {
       for (let i = 0; i < $navBar.length; i++) {
         if (i === 3) {
           $navBar[i].disabled = true;

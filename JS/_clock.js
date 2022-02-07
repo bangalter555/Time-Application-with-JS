@@ -8,7 +8,7 @@ export const clickOnClock = () => {
     let target = e.target;
     e.stopPropagation();
 
-    if (target.matches("#clock-btn")) {
+    if (target.matches("#clock-btn") || target.matches("#clock-btn img")) {
       console.log($navBar, $sections);
       for (let i = 0; i < $navBar.length; i++) {
         if (i === 0) {

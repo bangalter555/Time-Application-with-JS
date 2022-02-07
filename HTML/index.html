@@ -16,15 +16,15 @@
   </head>
   <body class="body">
     <nav class="nav-bar">
-      <button class="btn" id="clock-btn">Clock</button>
-      <button class="btn" id="chrono-btn">Stopwatch</button>
-      <button class="btn" id="timer-btn">Countdown Timer</button>
-      <button class="btn" id="alarm-btn">Alarm</button>
+      <button class="btn" id="clock-btn"><!--Clock--></button>
+      <button class="btn" id="chrono-btn"><!--Stopwatch--></button>
+      <button class="btn" id="timer-btn"><!--Countdown Timer--></button>
+      <button class="btn" id="alarm-btn"><!--Alarm--></button>
     </nav>
     <section class="main section">
       <div class="section-card home-card-display">
       <h2 class="home-title">Time's App!</h2>
-      <p>In this web application you will find different features such as a stopwatch, a timer or a multiple alarm setter. Make your time count!</p>
+     
       </div>
      </section>
     <section class="main hidden section">
@@ -78,30 +78,23 @@
         <div class="set-alarm-field">
           <input type="number" name="hour" id="_hour" placeholder="HH" max="23" min="00">
           <input type="number" name="minutes" id="_minutes" placeholder="MM" max="59" min="00">
-          <!-- <input type="number" name="seconds" id="_seconds"placeholder="SS" max="59" min="00"> -->
           <input type="hidden" name="id" />
         </div>
         <div class="controls">
           <button type="submit" class="set-alarm-btn">Set Alarm</button>
-          <button type="res"class="clear-alarm">Stop Alarm</button>
+          <button type="reset"class="clear-alarm">Stop Alarm</button>
         </div>
       </form>
       <section class="alarm-list">
         <div>
           <h3 class="alarm-heading">Stored Alarms</h3>
         </div>
-        <div>
+        <div class="stored-alarm-list">
           <ul id="alarm-list"></ul>
         </div>
       </div>
       </section>
     </section>
-    <!-- <template id="alarm-template">
-      <li class="time-list">
-        <span class="time"></span>
-        <button class="delete-alarm time-control" id="delete-btn">Delete Alarm</button>
-      </li>
-    </template> -->
     <script src="/JS/main.js" type="module"></script>
   </body>
 </html>
