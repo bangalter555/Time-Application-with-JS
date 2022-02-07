@@ -1,0 +1,44 @@
+@use "../Utils/mixins" as m;
+@use "../Themes/colours" as c;
+
+.timer-card-display {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.timer {
+  border-radius: 5px;
+  width: 50%;
+  height: 50%;
+  @include m.section-generic-style;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloque {
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .timer-input {
+    width: 80%;
+    height: 90%;
+    background-color: c.$bg-color;
+    color: c.$main-white;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-size: 2rem;
+  }
+}
+
+.timer-buttons {
+  display: inline-flex;
+  height: 30%;
+}

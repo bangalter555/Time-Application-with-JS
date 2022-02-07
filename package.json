@@ -1,0 +1,12 @@
+{
+  "name": "time.app",
+  "version": "1.0.0",
+  "description": "Time web application with 4 features (Digital clock, stopwatch, timer and alarm setter)",
+  "main": "main.js",
+  "scripts": {},
+  "keywords": [
+    "time-app"
+  ],
+  "author": "Esteban Lopez Alonzo",
+  "license": "ISC"
+}

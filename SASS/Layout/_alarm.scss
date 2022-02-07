@@ -1,0 +1,84 @@
+@use "../Utils/mixins" as m;
+@use "../Themes/colours" as c;
+
+.alarm-card-display {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 60%;
+  gap: 4%;
+}
+
+.set-alarm {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  @include m.section-generic-style;
+}
+
+.set-alarm-field {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  input {
+    width: 45%;
+  }
+}
+
+.controls {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  button {
+    width: 45%;
+    padding: 1.5rem auto;
+    border: none;
+    background-color: c.$dark-blue-btn;
+    color: c.$main-white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    opacity: 0.7;
+  }
+}
+
+//SECTION  WITH CLASS "ALARM-LIST"
+.alarm-list {
+  width: 50%;
+  text-align: center;
+}
+
+//LIST WITH ID "ALARM-LIST WHERE STORED LIST WILL BE DISPLAYED
+#alarm-list {
+  list-style-type: none;
+}
+
+//EVERY LIST ITEM WITH ALARM STORED
+.time-list {
+  @include m.section-generic-style;
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2%;
+
+  button.delete-alarm {
+    height: 100%;
+    padding: 1.5rem auto;
+    border: none;
+    background-color: c.$dark-blue-btn;
+    color: c.$main-white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/DIST/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Mukta:wght@300&family=Readex+Pro:wght@300&family=Roboto:wght@300&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/Assets/time-icon.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time's App!</title>
+  </head>
+  <body class="body">
+    <nav class="nav-bar">
+      <button class="btn" id="clock-btn">Clock</button>
+      <button class="btn" id="chrono-btn">Stopwatch</button>
+      <button class="btn" id="timer-btn">Countdown Timer</button>
+      <button class="btn" id="alarm-btn">Alarm</button>
+    </nav>
+    <section class="main section">
+      <div class="section-card home-card-display">
+      <h2 class="home-title">Time's App!</h2>
+      <p>In this web application you will find different features such as a stopwatch, a timer or a multiple alarm setter. Make your time count!</p>
+      </div>
+     </section>
+    <section class="main hidden section">
+      <div class="section-card clock-card-display">  
+      <h2 class="title">What time is it?</h2>
+      <button class="clock-buttons" id="show-btn">Show Clock</button>
+      <div id="clock"></div>
+      <button class="clock-buttons hidden" id="close-btn">Close</button>
+    </div>
+    </section>
+    <section class="main hidden section">
+     <div class="section-card stopwatch-card-display">  
+      <h2 class="title">Stopwatch</h2>
+      <div class="circle">
+        <div id="stopwatch" class="stopwatch">00:00:00</div>
+          <div class="buttons">
+            <div id="stop"class="stop"></div>
+            <div id="play-pause" class="paused"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="main hidden section">
+      <div class="section-card timer-card-display">  
+      <h2 class="title">Set Timer</h2>
+      <form class="timer">
+        <div class="bloque">
+          <input type="number" id="hours"  class="timer-input" min="00" max="99" maxlength="2" value="0"  >
+          <p>Hours</p>
+        </div>
+        <div class="bloque">
+          <input type="number" id="minutes" class="timer-input"  min="00" max="59" value="0" >
+          <p>Minutes</p>
+        </div>
+        <div class="bloque">
+          <input type="number" id="seconds" class="timer-input" min="00" max="59" value="0" required>
+          <p>Seconds</p>
+        </div>
+        <div class="timer-buttons">
+          <div id="stop-timer"class="stop"></div>
+          <div id="play-pause-timer" class="paused"></div>
+        </div>
+      </form>
+    </div>
+    </section>
+    <section class="main hidden section">
+      <div class="section-card alarm-card-display">  
+      <h2 class="title">Alarm</h2>
+      <form class="set-alarm">
+        <div class="set-alarm-field">
+          <input type="number" name="hour" id="_hour" placeholder="HH" max="23" min="00">
+          <input type="number" name="minutes" id="_minutes" placeholder="MM" max="59" min="00">
+          <!-- <input type="number" name="seconds" id="_seconds"placeholder="SS" max="59" min="00"> -->
+          <input type="hidden" name="id" />
+        </div>
+        <div class="controls">
+          <button type="submit" class="set-alarm-btn">Set Alarm</button>
+          <button type="res"class="clear-alarm">Stop Alarm</button>
+        </div>
+      </form>
+      <section class="alarm-list">
+        <div>
+          <h3 class="alarm-heading">Stored Alarms</h3>
+        </div>
+        <div>
+          <ul id="alarm-list"></ul>
+        </div>
+      </div>
+      </section>
+    </section>
+    <!-- <template id="alarm-template">
+      <li class="time-list">
+        <span class="time"></span>
+        <button class="delete-alarm time-control" id="delete-btn">Delete Alarm</button>
+      </li>
+    </template> -->
+    <script src="/JS/main.js" type="module"></script>
+  </body>
+</html>

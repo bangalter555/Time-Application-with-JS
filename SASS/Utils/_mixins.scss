@@ -1,0 +1,21 @@
+@use "../Themes/colours" as c;
+
+@mixin buttons {
+  border: none;
+  border-radius: 3%;
+  background-color: c.$bg-color;
+  color: c.$main-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: thin solid c.$main-white;
+  box-shadow: 5px 5px 6px #444;
+  cursor: pointer;
+}
+
+@mixin section-generic-style {
+  background-color: c.$bg-color;
+  color: c.$main-white;
+  border: thin solid c.$main-white;
+  box-shadow: 5px 5px 6px #444;
+}

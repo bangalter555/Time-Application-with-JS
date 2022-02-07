@@ -1,0 +1,15 @@
+@use "../Themes/colours" as c;
+
+.body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background-color: c.$bg-color;
+  color: c.$main-white;
+}

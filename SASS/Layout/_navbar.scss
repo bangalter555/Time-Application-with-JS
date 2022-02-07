@@ -1,0 +1,24 @@
+@use "../Themes/colours" as c;
+@use "../Utils/mixins" as m;
+
+.nav-bar {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: c.$bg-color;
+  color: c.$main-white;
+  box-shadow: 5px 5px 6px #444;
+}
+
+.btn {
+  width: 55%;
+  height: 8%;
+  @include m.buttons;
+}

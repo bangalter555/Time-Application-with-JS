@@ -1,0 +1,52 @@
+@use "../Themes/colours" as c;
+@use "../Utils/mixins" as m;
+.stopwatch-card-display {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.circle {
+  @include m.section-generic-style;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+#stopwatch {
+  font-size: 3rem;
+}
+
+.buttons {
+  display: inline-flex;
+}
+
+.paused {
+  height: 20px;
+  border-width: 10px 0 10px 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-color: transparent transparent transparent #fff;
+  transition: all 100ms ease;
+  will-change: border-with;
+  border-style: solid;
+}
+
+.running {
+  border-style: double;
+  border-width: 0 0 0 20px;
+}
+
+.stop {
+  background-color: #fff;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
