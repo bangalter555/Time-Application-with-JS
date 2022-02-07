@@ -81,16 +81,21 @@
   }
 }
 
-// //HEIGHTS
-// @media (max-height: 500px) {
-//   .nav-bar {
-//     height: 45.125px;
-//   }
-//   .main {
-//     height: 400px;
-//   }
+//HEIGHTS
+@media (max-height: 500px) {
+  .image {
+    height: 25px;
+    width: 25px;
+  }
+  .section-card {
+    height: 85%;
+    align-self: flex-end;
+  }
+}
 
-//   .stopwatch-card-display {
-//     height: 272px;
-//   }
-// }
+@media (max-height: 300px) {
+  .nav-bar,
+  .main {
+    display: none;
+  }
+}

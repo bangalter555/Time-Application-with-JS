@@ -416,5 +416,22 @@
     width: 320px;
   }
 }
+@media (max-height: 500px) {
+  .image {
+    height: 25px;
+    width: 25px;
+  }
+
+  .section-card {
+    height: 85%;
+    align-self: flex-end;
+  }
+}
+@media (max-height: 300px) {
+  .nav-bar,
+.main {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
