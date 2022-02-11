@@ -338,6 +338,7 @@
 .hidden {
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 950px) {
