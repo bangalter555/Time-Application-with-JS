@@ -14,7 +14,7 @@ console.log(currentHour);
 //Function setting a specific background image depending on the hour
 const checkingTime = () => {
   setInterval(() => {
-    if (currentHour >= 7 && currentHour < 19) {
+    if (currentHour >= 7 && currentHour < 20) {
       $body.classList.remove("night-mode");
       $body.classList.add("day-mode");
     } else {
