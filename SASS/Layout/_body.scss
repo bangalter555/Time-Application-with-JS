@@ -10,8 +10,6 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  // background-image: url("../Assets/background-image.jpeg");
-  // background-size: cover;
   color: c.$main-white;
 }
 
@@ -29,15 +27,8 @@
   background-image: url("../Assets/night-bg.jpg");
   background-size: cover;
 
-  // .nav-bar {
-  // background-color: c.$bg-color;
-  // }
-
   .home-title,
   .title {
     color: c.$main-white;
   }
-
-  // .nav-bar {
-  // }
 }
