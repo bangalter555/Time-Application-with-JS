@@ -1,13 +1,32 @@
 //IMPORTS
-import { $d } from "./_elements.js";
+import { $d, $body } from "./_elements.js";
 import { clickOnClock } from "./_clock.js";
 import { clickOnChrono } from "./_stopwatch.js";
 import { clickOnTimer } from "./_timer.js";
 import { clickOnAlarm } from "./_alarm.js";
 import { responsiveMedia } from "./_media-queries.js";
 
+let hour = new Date().toLocaleTimeString();
+const currentHour = Number.parseInt(hour);
+
+console.log(currentHour);
+
+//Function setting a specific background image depending on the hour
+const checkingTime = () => {
+  setInterval(() => {
+    if (currentHour >= 7 && currentHour < 19) {
+      $body.classList.remove("night-mode");
+      $body.classList.add("day-mode");
+    } else {
+      $body.classList.add("night-mode");
+      $body.classList.remove("day-mode");
+    }
+  }, 1000);
+};
+
 //EVENTS DELEGATION
 $d.addEventListener("DOMContentLoaded", (e) => {
+  checkingTime();
   clickOnClock();
   clickOnChrono();
   clickOnTimer();

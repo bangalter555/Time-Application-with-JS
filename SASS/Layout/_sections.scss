@@ -13,6 +13,7 @@
   height: 5%;
   align-self: flex-start;
   text-align: center;
+  // color: c.$bg-black;
 }
 
 .section {
@@ -27,4 +28,5 @@
   height: 60%;
   border: thin solid c.$main-white;
   box-shadow: 5px 5px 6px #444;
+  border-radius: 5px;
 }

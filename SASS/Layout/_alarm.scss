@@ -19,6 +19,7 @@
   align-items: center;
   gap: 5%;
   @include m.section-generic-style;
+  border-radius: 5px;
 }
 
 .set-alarm-field {
@@ -42,6 +43,7 @@
     width: 49%;
     height: 3rem;
     border: thin solid c.$main-white;
+    border-radius: 5px;
     background-color: c.$dark-blue-btn;
     color: c.$main-white;
     cursor: pointer;

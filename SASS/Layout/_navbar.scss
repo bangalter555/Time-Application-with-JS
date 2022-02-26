@@ -14,7 +14,7 @@
   align-items: center;
   background-color: c.$bg-color;
   color: c.$main-white;
-  box-shadow: 5px 5px 6px #444;
+  box-shadow: 5px 5px 6px #111;
 }
 
 .btn {
@@ -27,4 +27,5 @@
   object-fit: cover;
   height: 40px;
   width: 40px;
+  color: c.$navbar-color;
 }

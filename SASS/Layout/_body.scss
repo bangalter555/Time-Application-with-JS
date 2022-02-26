@@ -10,6 +10,34 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  background-color: c.$bg-color;
+  // background-image: url("../Assets/background-image.jpeg");
+  // background-size: cover;
   color: c.$main-white;
+}
+
+.day-mode {
+  background-image: url("../Assets/background-image.jpeg");
+  background-size: cover;
+
+  .home-title,
+  .title {
+    color: c.$bg-black;
+  }
+}
+
+.night-mode {
+  background-image: url("../Assets/night-bg.jpg");
+  background-size: cover;
+
+  // .nav-bar {
+  // background-color: c.$bg-color;
+  // }
+
+  .home-title,
+  .title {
+    color: c.$main-white;
+  }
+
+  // .nav-bar {
+  // }
 }
