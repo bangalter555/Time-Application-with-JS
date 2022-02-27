@@ -485,6 +485,10 @@
     width: 20%;
     height: 30%;
   }
+
+  .alarm-card-display {
+    margin-top: 4%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
