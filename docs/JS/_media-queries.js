@@ -1,7 +1,7 @@
 import { $d, $navBar } from "./_elements.js";
 
 export const responsiveMedia = (id, mobileContent, desktopContent) => {
-  let breakpoint = window.matchMedia("(max-width:650px)");
+  let breakpoint = window.matchMedia("(max-width: 650px)");
 
   const responsive = (e) => {
     if (e.matches) {
