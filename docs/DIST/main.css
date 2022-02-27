@@ -452,12 +452,6 @@
     align-self: flex-end;
   }
 }
-@media (max-height: 300px) {
-  .nav-bar,
-.main {
-    display: none;
-  }
-}
 @media (min-height: 800px) {
   .body {
     flex-flow: row wrap;
@@ -487,7 +481,7 @@
   }
 
   .alarm-card-display {
-    margin-top: 12%;
+    margin-top: 15%;
   }
 }
 
