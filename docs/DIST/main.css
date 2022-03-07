@@ -311,6 +311,7 @@
 }
 .set-alarm-field input {
   width: 45%;
+  height: 80%;
 }
 
 .controls {
