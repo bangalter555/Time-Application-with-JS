@@ -34,16 +34,10 @@
   background-image: url("../Assets/background-image.jpeg");
   background-size: cover;
 }
-.day-mode .home-title {
-  color: #272c2e;
-}
 
 .night-mode {
   background-image: url("../Assets/night-bg.jpg");
   background-size: cover;
-}
-.night-mode .home-title {
-  color: white;
 }
 
 .main {
@@ -137,6 +131,7 @@
   font-size: 3.5rem;
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 .clock-card-display {
