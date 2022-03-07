@@ -34,8 +34,7 @@
   background-image: url("../Assets/background-image.jpeg");
   background-size: cover;
 }
-.day-mode .home-title,
-.day-mode .title {
+.day-mode .home-title {
   color: #272c2e;
 }
 
@@ -43,8 +42,7 @@
   background-image: url("../Assets/night-bg.jpg");
   background-size: cover;
 }
-.night-mode .home-title,
-.night-mode .title {
+.night-mode .home-title {
   color: white;
 }
 
@@ -57,6 +55,12 @@
 }
 
 .title {
+  background-color: #272c2e;
+  color: white;
+  border: thin solid white;
+  box-shadow: 5px 5px 6px #444;
+  padding: 2%;
+  border-radius: 5px;
   font-size: 2.5rem;
   align-self: center;
 }
@@ -337,6 +341,16 @@
   list-style-type: none;
 }
 
+.alarm-heading {
+  background-color: #272c2e;
+  color: white;
+  border: thin solid white;
+  box-shadow: 5px 5px 6px #444;
+  padding: 1.5%;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
+
 .time-list {
   background-color: #272c2e;
   color: white;
@@ -348,6 +362,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 2%;
+  border-radius: 5px;
 }
 .time-list button.delete-alarm {
   height: 100%;
@@ -475,7 +490,7 @@
 
   .btn {
     width: 20%;
-    height: 30%;
+    height: 45%;
   }
 
   .alarm-card-display {

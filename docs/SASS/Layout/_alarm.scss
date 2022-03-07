@@ -66,6 +66,13 @@
   list-style-type: none;
 }
 
+.alarm-heading {
+  @include m.section-generic-style;
+  padding: 1.5%;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
+
 //EVERY LIST ITEM WITH ALARM STORED
 .time-list {
   @include m.section-generic-style;
@@ -75,6 +82,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 2%;
+  border-radius: 5px;
 
   button.delete-alarm {
     height: 100%;

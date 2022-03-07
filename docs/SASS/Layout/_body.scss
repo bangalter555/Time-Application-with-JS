@@ -17,8 +17,7 @@
   background-image: url("../Assets/background-image.jpeg");
   background-size: cover;
 
-  .home-title,
-  .title {
+  .home-title {
     color: c.$bg-black;
   }
 }
@@ -27,8 +26,7 @@
   background-image: url("../Assets/night-bg.jpg");
   background-size: cover;
 
-  .home-title,
-  .title {
+  .home-title {
     color: c.$main-white;
   }
 }

@@ -1,4 +1,5 @@
 @use "../Themes/colours" as c;
+@use "../Utils/mixins" as m;
 
 .main {
   width: 85%;
@@ -9,8 +10,9 @@
 }
 
 .title {
-  // width: 100%;
-  // height: 5%;
+  @include m.section-generic-style;
+  padding: 2%;
+  border-radius: 5px;
   font-size: 2.5rem;
   align-self: center;
 }
