@@ -1,7 +1,10 @@
 //IMPORTS
 import { $d, $navBar, $sections } from "./_elements.js";
 
-let clockHour;
+let clockHour = setInterval(() => {
+  let hour = new Date().toLocaleTimeString();
+  $d.getElementById("clock").innerHTML = `${hour}`;
+}, 1000);
 
 export const clickOnClock = () => {
   $d.addEventListener("click", (e) => {
@@ -27,21 +30,21 @@ export const clickOnClock = () => {
       }
     }
 
-    if (target.matches("#show-btn")) {
-      clockHour = setInterval(() => {
-        let hour = new Date().toLocaleTimeString();
-        $d.getElementById("clock").innerHTML = `${hour}`;
-      }, 1000);
-      $d.querySelector("#clock").classList.toggle("clock-showed");
-      $d.querySelector("#show-btn").classList.toggle("hidden");
-      $d.querySelector("#close-btn").classList.toggle("hidden");
-    }
-    if (target.matches("#close-btn")) {
-      clearInterval(clockHour);
-      $d.querySelector("#clock").innerHTML = null;
-      $d.querySelector("#clock").classList.toggle("clock-showed");
-      $d.querySelector("#show-btn").classList.toggle("hidden");
-      $d.querySelector("#close-btn").classList.toggle("hidden");
-    }
+    // if (target.matches("#show-btn")) {
+    //   clockHour = setInterval(() => {
+    //     let hour = new Date().toLocaleTimeString();
+    //     $d.getElementById("clock").innerHTML = `${hour}`;
+    //   }, 1000);
+    //   $d.querySelector("#clock").classList.toggle("clock-showed");
+    //   $d.querySelector("#show-btn").classList.toggle("hidden");
+    //   $d.querySelector("#close-btn").classList.toggle("hidden");
+    // }
+    // if (target.matches("#close-btn")) {
+    //   clearInterval(clockHour);
+    //   $d.querySelector("#clock").innerHTML = null;
+    //   $d.querySelector("#clock").classList.toggle("clock-showed");
+    //   $d.querySelector("#show-btn").classList.toggle("hidden");
+    //   $d.querySelector("#close-btn").classList.toggle("hidden");
+    // }
   });
 };
