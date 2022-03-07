@@ -28,10 +28,18 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
-  input {
-    width: 45%;
-  }
+}
+.alarm-input {
+  width: 45%;
+  background-color: c.$bg-black;
+  color: c.$main-white;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+}
+.alarm-input::placeholder {
+  color: inherit;
 }
 
 .controls {

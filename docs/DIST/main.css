@@ -306,8 +306,19 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.set-alarm-field input {
+
+.alarm-input {
   width: 45%;
+  background-color: #272c2e;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  font-size: 2rem;
+}
+
+.alarm-input::placeholder {
+  color: inherit;
 }
 
 .controls {
