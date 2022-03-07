@@ -25,9 +25,10 @@
 }
 
 .section-card {
+  @include m.section-generic-style;
   width: 60%;
   height: 60%;
-  border: thin solid c.$main-white;
-  box-shadow: 5px 5px 6px #444;
+  // border: thin solid c.$main-white;
+  // box-shadow: 5px 5px 6px #444;
   border-radius: 5px;
 }
