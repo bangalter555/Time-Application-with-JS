@@ -493,6 +493,11 @@
     height: 45%;
   }
 
+  .circle {
+    height: 20rem;
+    width: 20rem;
+  }
+
   .alarm-card-display {
     margin-top: 15%;
   }
