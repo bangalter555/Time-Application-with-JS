@@ -40,14 +40,6 @@
   background-image: url("../Assets/night-bg.jpg");
 }
 
-.main {
-  width: 85%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
 .title {
   background-color: #272c2e;
   color: white;
@@ -66,6 +58,11 @@
 }
 
 .section {
+  width: 85%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -78,23 +75,8 @@
   border: thin solid white;
   box-shadow: 5px 5px 6px #000;
   width: 60%;
-  height: 60%;
+  height: 70%;
   border-radius: 5px;
-}
-
-.section-card-full-screen {
-  background-color: #272c2e;
-  color: white;
-  border: thin solid white;
-  box-shadow: 5px 5px 6px #000;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
 .nav-bar {
@@ -188,8 +170,8 @@
 }
 
 .clock-buttons {
-  width: 20%;
-  height: 10%;
+  width: 50%;
+  height: 20%;
   padding: 2%;
   border: none;
   background-color: #272c2e;
@@ -210,7 +192,7 @@
 }
 
 #clock {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Bakbak One", cursive;
   font-family: "Mukta", sans-serif;
   font-family: "Readex Pro", sans-serif;
@@ -229,8 +211,8 @@
 
 .timer {
   border-radius: 5px;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 60%;
   background-color: #272c2e;
   color: white;
   border: thin solid white;
@@ -249,13 +231,12 @@
   align-items: center;
 }
 .bloque .timer-input {
-  padding: 5%;
   background-color: #272c2e;
   color: white;
   border-radius: 5px;
   text-align: center;
   border: none;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Bakbak One", cursive;
   font-family: "Mukta", sans-serif;
   font-family: "Readex Pro", sans-serif;
@@ -267,7 +248,9 @@
 
 .timer-buttons {
   display: inline-flex;
+  justify-content: center;
   height: 30%;
+  width: 20%;
 }
 
 .stopwatch-card-display {
@@ -283,8 +266,8 @@
   border: thin solid white;
   box-shadow: 5px 5px 6px #000;
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 21rem;
+  height: 21rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -293,7 +276,7 @@
 }
 
 #stopwatch {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Bakbak One", cursive;
   font-family: "Mukta", sans-serif;
   font-family: "Readex Pro", sans-serif;
@@ -338,7 +321,6 @@
   align-items: center;
   height: 85%;
   gap: 4%;
-  margin-top: 4%;
 }
 
 .alarm-card-display-full-screen {
@@ -495,6 +477,25 @@
   padding: 1%;
 }
 
+.section-card-full-screen {
+  background-color: #272c2e;
+  color: white;
+  border: thin solid white;
+  box-shadow: 5px 5px 6px #000;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.full-screen-size {
+  font-size: 5rem;
+}
+
 .hidden {
   opacity: 0;
   visibility: hidden;
@@ -568,7 +569,15 @@
 
 @media (max-width: 950px) {
   .nav-bar {
-    width: 25%;
+    width: 20%;
+  }
+
+  .section {
+    width: 80%;
+  }
+
+  .section-card {
+    width: 90%;
   }
 
   .clock-showed {
@@ -576,11 +585,11 @@
   }
 
   .clock-buttons {
-    width: 35%;
+    width: 65%;
   }
 
   .timer {
-    width: 60%;
+    width: 90%;
   }
 
   .set-alarm {
@@ -611,7 +620,7 @@
   }
 }
 @media (max-width: 500px) {
-  .main {
+  .section {
     width: 100%;
     height: 90%;
   }

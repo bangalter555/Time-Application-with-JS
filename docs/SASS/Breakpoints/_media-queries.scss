@@ -4,20 +4,26 @@
 @media (max-width: 950px) {
   //NAVUGATION BAR
   .nav-bar {
-    width: 25%;
+    width: 20%;
   }
-  //MAIN
+  .section {
+    width: 80%;
+  }
+  //SECTION CARDS
+  .section-card {
+    width: 90%;
+  }
 
   //CLOCK SECTIONN
   .clock-showed {
     width: 45%;
   }
   .clock-buttons {
-    width: 35%;
+    width: 65%;
   }
   //TIMER SECTION
   .timer {
-    width: 60%;
+    width: 90%;
   }
   //ALARM SECTIONN
   .set-alarm {
@@ -53,7 +59,7 @@
   // .body {
   //   flex-flow: row wrap;
   // }
-  .main {
+  .section {
     width: 100%;
     height: 90%;
   }

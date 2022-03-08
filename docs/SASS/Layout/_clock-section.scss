@@ -21,14 +21,14 @@
 }
 
 .clock-buttons {
-  width: 20%;
-  height: 10%;
+  width: 50%;
+  height: 20%;
   padding: 2%;
   @include m.buttons;
 }
 
 #clock {
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Bakbak One", cursive;
   font-family: "Mukta", sans-serif;
   font-family: "Readex Pro", sans-serif;

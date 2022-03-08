@@ -4,7 +4,7 @@ const $d = document,
   $main = $d.querySelector(".container"),
   $navBarContainer = $d.querySelector(".nav-bar"),
   $navBar = Array.from(document.querySelectorAll(".btn")),
-  $sections = Array.from(document.querySelectorAll(".main")),
+  $sections = Array.from(document.querySelectorAll(".section")),
   $fragment = $d.createDocumentFragment(),
   $sectionCard = Array.from($d.querySelectorAll(".section-card"));
 

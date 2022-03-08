@@ -10,8 +10,8 @@
 .circle {
   @include m.section-generic-style;
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 21rem;
+  height: 21rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 #stopwatch {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Bakbak One", cursive;
   font-family: "Mukta", sans-serif;
   font-family: "Readex Pro", sans-serif;

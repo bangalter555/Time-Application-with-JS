@@ -10,8 +10,8 @@
 
 .timer {
   border-radius: 5px;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 60%;
   @include m.section-generic-style;
   display: flex;
   flex-flow: row wrap;
@@ -27,13 +27,12 @@
   align-items: center;
 
   .timer-input {
-    padding: 5%;
     background-color: c.$bg-black;
     color: c.$main-white;
     border-radius: 5px;
     text-align: center;
     border: none;
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: "Bakbak One", cursive;
     font-family: "Mukta", sans-serif;
     font-family: "Readex Pro", sans-serif;
@@ -46,5 +45,7 @@
 
 .timer-buttons {
   display: inline-flex;
+  justify-content: center;
   height: 30%;
+  width: 20%;
 }
