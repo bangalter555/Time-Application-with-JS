@@ -20,7 +20,10 @@ const start = () => {
   if (hour.value == 0 && minutes.value == 0 && seconds.value == 0) {
     clearInterval(startTimer);
     $timerAlarm.play();
-    alert(`Time is up!`);
+    $d.querySelector(".timer-card-display").classList.add(
+      "animate__animated",
+      "animate__heartBeat"
+    );
   } else if (seconds.value != 0) seconds.value--;
   else if (minutes.value != 0 && seconds.value == 0) {
     seconds.value = 59;
@@ -38,10 +41,18 @@ const pause = () => {
   clearInterval(startTimer);
   $timerAlarm.pause();
   $timerAlarm.currentTime = 0;
+  $d.querySelector(".timer-card-display").classList.remove(
+    "animate__animated",
+    "animate__heartBeat"
+  );
 };
 
 const stop = () => {
   $playTimerPauseButton.classList.remove("running");
+  $d.querySelector(".timer-card-display").classList.remove(
+    "animate__animated",
+    "animate__heartBeat"
+  );
   clearInterval(startTimer);
   $timerAlarm.pause();
   $timerAlarm.currentTime = 0;

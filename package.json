@@ -8,5 +8,8 @@
     "time-app"
   ],
   "author": "Esteban Lopez Alonzo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
