@@ -1,5 +1,5 @@
 //IMPORTS
-import { $d, $navBarContainer, $sectionCard } from "./_elements.js";
+import { $d, $navBarContainer, $sectionCard, $sections } from "./_elements.js";
 
 export const clickOnFullScreenButton = () => {
   $d.addEventListener("click", (e) => {
@@ -8,8 +8,10 @@ export const clickOnFullScreenButton = () => {
       $navBarContainer.classList.toggle("hidden");
       $sectionCard.forEach((section) => {
         section.classList.toggle("section-card");
-        section.classList.toggle("main");
         section.classList.toggle("section-card-full-screen");
+      });
+      $sections.forEach((section) => {
+        section.classList.toggle("main");
       });
       $sectionCard[4].classList.toggle("alarm-card-display-full-screen");
       $sectionCard[4].classList.toggle("alarm-card-display");
