@@ -67,9 +67,11 @@
   }
 }
 
-@media (max-width: 320px) {
-  .nav-bar {
-    width: 320px;
+@media (max-width: 350px) {
+  .section-card {
+    width: 98%;
+    height: 80%;
+    align-self: flex-end;
   }
 }
 
@@ -78,10 +80,6 @@
   .image {
     height: 25px;
     width: 25px;
-  }
-  .section-card {
-    height: 85%;
-    align-self: center;
   }
 }
 
