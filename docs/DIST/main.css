@@ -250,7 +250,7 @@
   display: inline-flex;
   justify-content: center;
   height: 30%;
-  width: 20%;
+  width: 40%;
 }
 
 .stopwatch-card-display {
@@ -334,7 +334,7 @@
 }
 
 .set-alarm {
-  width: 50%;
+  width: 80%;
   height: 35%;
   display: flex;
   flex-flow: column;
@@ -362,7 +362,7 @@
   border-radius: 5px;
   text-align: center;
   border: none;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Bakbak One", cursive;
   font-family: "Mukta", sans-serif;
   font-family: "Readex Pro", sans-serif;
@@ -396,7 +396,7 @@
 }
 
 .alarm-list {
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
@@ -591,14 +591,6 @@
   .timer {
     width: 90%;
   }
-
-  .set-alarm {
-    width: 70%;
-  }
-
-  .alarm-list {
-    width: 70%;
-  }
 }
 @media (max-width: 650px) {
   .section-card {
@@ -617,10 +609,6 @@
     border: none;
     box-shadow: none;
     background-color: #8f8f8f;
-  }
-
-  .set-alarm {
-    width: 90%;
   }
 }
 @media (max-width: 500px) {

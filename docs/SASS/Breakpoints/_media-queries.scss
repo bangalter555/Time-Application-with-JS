@@ -25,13 +25,6 @@
   .timer {
     width: 90%;
   }
-  //ALARM SECTIONN
-  .set-alarm {
-    width: 70%;
-  }
-  .alarm-list {
-    width: 70%;
-  }
 }
 
 @media (max-width: 650px) {
@@ -51,10 +44,6 @@
     border: none;
     box-shadow: none;
     background-color: c.$bg-color;
-  }
-  //Alarm section
-  .set-alarm {
-    width: 90%;
   }
 }
 

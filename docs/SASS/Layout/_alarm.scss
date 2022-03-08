@@ -22,7 +22,7 @@
 }
 
 .set-alarm {
-  width: 50%;
+  width: 80%;
   height: 35%;
   display: flex;
   flex-flow: column;
@@ -46,7 +46,7 @@
   border-radius: 5px;
   text-align: center;
   border: none;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: "Bakbak One", cursive;
   font-family: "Mukta", sans-serif;
   font-family: "Readex Pro", sans-serif;
@@ -82,7 +82,7 @@
 
 //SECTION  WITH CLASS "ALARM-LIST"
 .alarm-list {
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
