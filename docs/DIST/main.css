@@ -249,8 +249,7 @@
   align-items: center;
 }
 .bloque .timer-input {
-  width: 80%;
-  height: 90%;
+  padding: 5%;
   background-color: #272c2e;
   color: white;
   border-radius: 5px;
@@ -309,8 +308,8 @@
 }
 
 .paused {
-  height: 20px;
-  border-width: 10px 0 10px 20px;
+  height: 30px;
+  border-width: 15px 0 15px 30px;
   margin-left: 30px;
   cursor: pointer;
   box-sizing: border-box;
@@ -327,8 +326,8 @@
 
 .stop {
   background-color: #fff;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
 }
 
