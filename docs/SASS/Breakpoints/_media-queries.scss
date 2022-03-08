@@ -77,14 +77,63 @@
 
 //HEIGHTS
 @media (max-height: 500px) {
-  .image {
-    height: 25px;
-    width: 25px;
-  }
-
+  //Sections card
   .section-card {
     width: 95%;
     height: 95%;
+  }
+
+  //General font size
+  .title,
+  #clock,
+  #stopwatch,
+  .alarm-input {
+    font-size: 1.5rem;
+  }
+
+  .bloque {
+    .timer-input {
+      font-size: 1.5rem;
+    }
+  }
+
+  //Stopwatch size
+  .circle {
+    width: 12rem;
+    height: 12rem;
+  }
+  .stop {
+    width: 20px;
+    height: 20px;
+  }
+  .paused {
+    height: 20px;
+    border-width: 10px 0 10px 20px;
+  }
+  .running {
+    border-width: 0 0 0 15px;
+  }
+
+  //Clock size
+  .clock-buttons {
+    width: 30%;
+    height: 15%;
+  }
+
+  //Timer size
+
+  //Alarm size
+  .controls {
+    button {
+      height: 2rem;
+      width: 45%;
+    }
+  }
+
+  //Icons size
+  .image {
+    height: 25px;
+    width: 25px;
   }
 }
 
