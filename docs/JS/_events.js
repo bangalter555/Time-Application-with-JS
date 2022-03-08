@@ -1,10 +1,11 @@
 //IMPORTS
-import { $d, $body } from "./_elements.js";
+import { $d, $body, $sectionCard } from "./_elements.js";
 import { clickOnClock } from "./_clock.js";
 import { clickOnChrono } from "./_stopwatch.js";
 import { clickOnTimer } from "./_timer.js";
 import { clickOnAlarm } from "./_alarm.js";
 import { responsiveMedia } from "./_media-queries.js";
+import { clickOnFullScreenButton } from "./_full-screen-button.js";
 
 let hour = new Date().toLocaleTimeString();
 const currentHour = Number.parseInt(hour);
@@ -31,6 +32,7 @@ $d.addEventListener("DOMContentLoaded", (e) => {
   clickOnChrono();
   clickOnTimer();
   clickOnAlarm();
+  clickOnFullScreenButton();
   responsiveMedia(
     "clock-btn",
     "Clock",
@@ -51,4 +53,5 @@ $d.addEventListener("DOMContentLoaded", (e) => {
     "Alarm",
     `<img alt="alarm" src="../Assets/alarma-icon-navbar.png" class="image">`
   );
+  console.log($sectionCard);
 });

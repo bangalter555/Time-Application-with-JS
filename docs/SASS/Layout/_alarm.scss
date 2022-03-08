@@ -11,6 +11,16 @@
   margin-top: 4%;
 }
 
+.alarm-card-display-full-screen {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 0;
+  gap: 3%;
+}
+
 .set-alarm {
   width: 50%;
   height: 35%;

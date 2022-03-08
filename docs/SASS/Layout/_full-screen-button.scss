@@ -1,0 +1,12 @@
+@use "../Themes/colours" as c;
+@use "../Utils/mixins" as m;
+
+#full-screen-btn {
+  @include m.buttons;
+  position: fixed;
+  z-index: 5;
+  bottom: 0.5%;
+  right: 0.5%;
+  cursor: pointer;
+  padding: 1%;
+}
