@@ -15,6 +15,11 @@ export const clickOnFullScreenButton = () => {
       });
       $sectionCard[4].classList.toggle("alarm-card-display-full-screen");
       $sectionCard[4].classList.toggle("alarm-card-display");
+      if (target.textContent === "Full screen") {
+        target.textContent = "Normal screen";
+      } else {
+        target.textContent = "Full screen";
+      }
     }
   });
 };
