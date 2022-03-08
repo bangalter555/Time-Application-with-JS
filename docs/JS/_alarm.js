@@ -20,7 +20,6 @@ const alarmArray = [],
 //Function that plays an alarm ring when time is up
 const alarmRinging = () => {
   $alarm.play();
-  alert(`It's ${new Date().toLocaleTimeString()}. Wake Up!`);
 };
 
 //Function to set the correct time format
@@ -87,6 +86,10 @@ const timeIsUp = () => {
 
     if (alarmArray.some((alarm) => alarm === now)) {
       alarmRinging();
+      $d.querySelector(".alarm-card-display").classList.add(
+        "animate__animated",
+        "animate__heartBeat"
+      );
     }
   }, 1000);
 };
@@ -130,6 +133,10 @@ export const clickOnAlarm = () => {
     }
     if (target.matches(".clear-alarm")) {
       $alarm.pause();
+      $d.querySelector(".alarm-card-display").classList.remove(
+        "animate__animated",
+        "animate__heartBeat"
+      );
     }
   });
 
