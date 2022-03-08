@@ -19,7 +19,7 @@
 
 .body {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   box-sizing: border-box;
   z-index: 0;
   overflow: hidden;
@@ -28,16 +28,16 @@
   justify-content: center;
   align-items: center;
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .day-mode {
   background-image: url("../Assets/background-image.jpeg");
-  background-size: cover;
 }
 
 .night-mode {
   background-image: url("../Assets/night-bg.jpg");
-  background-size: cover;
 }
 
 .main {
