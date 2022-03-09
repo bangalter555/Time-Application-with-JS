@@ -715,10 +715,14 @@
     width: 90%;
   }
 
-  .btn,
-#full-screen-btn {
+  .btn {
     width: 20%;
     height: 45%;
+  }
+
+  #full-screen-btn {
+    width: 20%;
+    height: 5%;
   }
 
   .circle {
