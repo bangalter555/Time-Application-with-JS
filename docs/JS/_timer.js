@@ -71,7 +71,7 @@ $d.addEventListener("keyup", (e) => {
       alert("Invalid number of minutes");
     }
     if (seconds.value > 59 || seconds.value < 0) {
-      alert("Invalud number of seconds");
+      alert("Invalid number of seconds");
     }
   }
 });
@@ -101,6 +101,15 @@ export const clickOnTimer = () => {
     }
 
     if (target === $playTimerPauseButton) {
+      if (hour.value.length > 2 || hour.value.length < 0) {
+        alert("Invalid number of hours");
+      }
+      if (minutes.value > 59 || minutes.value < 0) {
+        alert("Invalid number of minutes");
+      }
+      if (seconds.value > 59 || seconds.value < 0) {
+        alert("Invalid number of seconds");
+      }
       if (!$playTimerPauseButton.classList.contains("running")) {
         $playTimerPauseButton.classList.add("running");
         startTimer = setInterval(() => {
