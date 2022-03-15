@@ -23,6 +23,11 @@
   @include m.buttons;
 }
 
+.btn:hover {
+  box-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0); // border: 1px solid ;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+
 .image {
   object-fit: cover;
   height: 40px;
